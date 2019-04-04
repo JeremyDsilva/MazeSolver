@@ -12,9 +12,7 @@ class Astar : public Dijkstra {
 	
 		// you want rhs to be smaller than lhs
 		bool operator()(Vertex *lhs, Vertex* rhs) {
-			if(abs(col - rhs->getColumn() * 1.0) + abs(row - rhs->getRow() *1.0) == abs(col - lhs->getColumn() * 1.0) + abs(row - lhs->getRow()))
-				return rhs->getLength() < lhs->getLength();
-			return abs(col - rhs->getColumn() * 1.0) + abs(row - rhs->getRow() *1.0) < abs(col - lhs->getColumn() * 1.0) + abs(row - lhs->getRow());
+		      return abs(col - rhs->getColumn() * 1.0) + abs(row - rhs->getRow() *1.0) + rhs->getLength() < abs(col - lhs->getColumn() * 1.0) + abs(row - lhs->getRow()) +  lhs->getLength();
 		}
 	};
 
