@@ -20,7 +20,7 @@ You will need to build a class that inherits the MazeBuilder class to read the m
 
 <pre><code>virtual void isVertex(int row, int column, bool & top, bool & down, bool & left, bool & right, bool & isGoal) = 0;</code></pre>
 
-The function isVertex takes in row and column as arguments along with four Booleans that represent the direction of movement that can occur at the cell and the Boolean isGoal representing the start or end points. 
+The function isVertex takes in a row and column positions of a cell in your maze as arguments along with four Booleans that represent the direction of movement that can occur at the cell and the Boolean isGoal representing the start or end points. 
 
 Using the maze above as example, at row zero column zero, (numbering starts from zero) you can move only downward and hence down would be set to true and other directions set to false, while at position row four column two, you can move upward, to the left and to the right but not downward, hence all the directions would be set to true except down. If the position at row zero column zero is your starting or ending point, isGoal additionally would be set to true as well. By default, all Boolean passed are set to false. 
 
