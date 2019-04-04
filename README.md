@@ -55,19 +55,19 @@ Additionally to get the coordinate path:
 
 To add your own path finding algorithm, inherit the Path class. 
 
-## Additional Notes
-
-#### Start and end position
-
-If the function MazeBuilder::isVertex does not set start and end goals (by setting isGoal to true at a given position), they are set automatically based on the first and last Vertexes in stored in Maze. If the function MazeBuilder::isVertex set isGoal to true for more that two position true, then start position is the first Vertex to be set as a goal and end position is the last Vertex to be set as goal. Vertexes are built at positions where isGoal is set to true, regardless if a different end position is later added and Vertex was otherwise redundant.
-
 ## Example folder and Animations
 
 The example folder has examples of how the code could be used to solve a maze read from a text file. Download the example folder along with the src folder and run driver.cpp.
 
-Alternatively running animate.cpp will let you see the pathfinding algorithms in action (animation built for Windows) to be used for educational purposes. Pathfinding algorithms included have been modified to store the sequence of Vertexes visited. 
+Alternatively running animate.cpp will let you see the pathfinding algorithms in action (animation built for Windows) to be used for educational purposes. Pathfinding algorithms included have been modified to store the sequence of Vertexes visited. Do manipulate the define statements in animate.cpp to control for speed and window size. 
 
-## Further Improvement
+## Additional Notes
+
+### Start and end position
+
+If the function MazeBuilder::isVertex does not set start and end goals (by setting isGoal to true at a given position), they are set automatically based on the first and last Vertexes in stored in Maze. If the function MazeBuilder::isVertex set isGoal to true for more that two position true, then start position is the first Vertex to be set as a goal and end position is the last Vertex to be set as goal. Vertexes are built at positions where isGoal is set to true, regardless if a different end position is later added and Vertex was otherwise redundant.
+
+### Further Improvement
 
 When building the maze, Maze::setMaze minimize building Vertexes along straight paths and in positions where a Vertex would only connect two different Vertexes. However, the number of Vertexes could be further brought down. Such is the case where a Vertex having three Edges connects to Vertex having a single Edge. In the maze above, such a Vertex would be at position row zero column two. Vertexes are also not minimized in cases where large empty space are present.
 
