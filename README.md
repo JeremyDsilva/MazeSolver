@@ -12,7 +12,7 @@ Download the src folder and include MazeSolver.h into your project.
 
 The Maze class aims to minimize the number of Vertexes needed to store the maze. Vertexes are built only at cells where path decisions need to take place to reduces the number of iterations using any pathfinding algorithm. Between Vertexes exist edges. Each Vertex has a maximum of four edges. Edges store the Vertex they lead to and the distance to the Vertex. In the case where a Vertex has fewer than four edges, edges lead to a nullptr. Each Vertex will have at least one edge that points to another Vertex. Shown below in blue are Vertexes built for the this maze. Additionally, to aid in displaying the path such as by coloring in pixel or printing path to file, the Edge class stores coordinates (has integers) that exist along straight lines in a list.  Shown below in Orange. 
 
-
+![](maze image.JPG)
 
 ### Building the Maze
 
