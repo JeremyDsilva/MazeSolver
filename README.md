@@ -15,7 +15,7 @@ The Maze class aims to minimize the number of Vertexes needed to store the maze.
 ![](https://github.com/JeremyDsilva/MazeSolver/blob/master/maze%20image.JPG)
 
 
-### Building the Maze
+### Building the Maze based on your format
 
 You will need to build a class that inherits the MazeBuilder class to read the maze based on the format of your maze. The MazeBuilder class has two virtual functions as follows:
 
