@@ -33,17 +33,16 @@ In the example folder, you can find MazeStringBuilder Class that inherits the Ma
 
 To build your maze, simply pass your MazeBuilder as a parameter to Maze::setMaze as shown below. Taking MazeStringBuilder as an example
 
-`Maze maze;`
-`MazeStringBuilder msb;`
-`maze.setMaze(msb);`
+<pre><code>Maze maze;
+MazeStringBuilder msb;`
+maze.setMaze(msb);</code></pre>
 
 ### Path Finding
 
 Four pathfinding algorithms are implemented. Depth First Search, Breadth First Search, Dijkstra and A*. To find a path, run any of the pathfinding algorithms as follows.
 
-`DepthFirstSearch dfs;`
-
-`dfs.findPath(maze.maze_begin(), maze.maze_end());`
+<pre><code>DepthFirstSearch dfs;
+dfs.findPath(maze.maze_begin(), maze.maze_end());</code></pre>
 
 The calculated path is stored in a list and can be accessed by calling the following function.
 
