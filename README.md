@@ -51,7 +51,7 @@ Additionally to get the coordinate path:
 
 <pre><code>list<Coordinates> cord = p.getCordinatePath();</code></pre>
 
-To add your own path finding algorithm, inherit the Path class. 
+A* is implemented using Manhattan distance. To add your own pathfinding algorithm, inherit the Path class. 
 
 ### Example folder and Animations
 
