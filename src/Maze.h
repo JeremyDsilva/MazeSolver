@@ -2,7 +2,7 @@
 #define __MAZE__
 
 #include "Vertex.h"
-#include "MazeBuilder.h"
+#include "IMazeReader.h"
 #include <list>
 
 using std::list;
@@ -118,7 +118,7 @@ public:
 	}
 
 	/*
-		Maze Builder Template must implement the following functions
+		IMazeReader implement the following functions
 
 		void setSize(size_t & row, size_t & col);
 			Needed to set deminsions of the maze
@@ -129,7 +129,7 @@ public:
 			isGoal -> true if cell represent start or end point
 
 	*/
-	void setMaze(MazeBuilder & mb) {
+	void setMaze(IMazeReader & mb) {
 		clear();
 		mb.setSize(_row, _col);
 		bool isGoal = false;

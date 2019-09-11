@@ -1,8 +1,8 @@
 #include "../src/MazeSolver.h"
-#include "MazeStringBuilder.h"
+#include "MazeStringReader.h"
 #include "MazePrint.h"
 
-void setOuter(MazeStringBuilder & msb) {
+void setOuter(MazeStringReader & msb) {
 	char buffer = '\0';
 	cout << "Do you want to use the default start and end positions[y/n]: ";
 	cin >> buffer;
@@ -66,7 +66,7 @@ int main()
 	bool rerun = true;
 
 	Maze maze;
-	MazeStringBuilder msb;
+	MazeStringReader msb;
 	MazePrint mp;
 	string in;
 
