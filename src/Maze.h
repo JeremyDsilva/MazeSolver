@@ -254,7 +254,6 @@ public:
 		}
 
 		// free memory
-		delete[] top_count;
 		for (int i = 0; i < getColumn(); ++i) {
 			top_next[i] = nullptr;
 		}
